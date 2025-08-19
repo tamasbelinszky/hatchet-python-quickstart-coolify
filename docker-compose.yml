@@ -77,7 +77,7 @@ services:
       migration:
         condition: service_completed_successfully
     ports:
-      - "7070:7070"
+      - "7077:7070"
     environment:
       - DATABASE_URL=postgres://${POSTGRES_USER}:${SERVICE_PASSWORD_POSTGRES}@postgres:5432/${POSTGRES_DB}
       - SERVER_GRPC_BIND_ADDRESS=${SERVER_GRPC_BIND_ADDRESS:-0.0.0.0}
