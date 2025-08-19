@@ -114,6 +114,7 @@ services:
     build: .
     environment:
       HATCHET_CLIENT_TOKEN: ${HATCHET_CLIENT_TOKEN}
+      HATCHET_CLIENT_TLS_STRATEGY: ${HATCHET_CLIENT_TLS_STRATEGY-none}
 
 volumes:
   hatchet_postgres_data:
