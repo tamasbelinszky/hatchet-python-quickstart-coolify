@@ -17,7 +17,7 @@ services:
     image: rabbitmq:3-management
     hostname: "rabbitmq"
     environment:
-      - SERVICE_URL_RABBITMQ_15672
+      - SERVICE_URL_RABBITMQ_5672
       - RABBITMQ_DEFAULT_USER=$SERVICE_USER_RABBITMQ
       - RABBITMQ_DEFAULT_PASS=$SERVICE_PASSWORD_RABBITMQ
       - PORT=${RABBITMQ_PORT:-5672}
